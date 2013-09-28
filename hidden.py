@@ -14,7 +14,7 @@ class HMM:
 	This class can be initialised either by a set of parameters, 
 	or by an observation sequence, in which case a model that is trained with this sequence is generated.
 	"""
-	def __init__(self, *args) 
+	def __init__(self, *args): 
 		if len(args) == 1: self.from_sequence(*args)
 		elif len(args) == 5: self.from_states(*args)
 
